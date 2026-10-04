@@ -42,3 +42,31 @@ The lab uses an isolated VMware host-only network so the virtual machines can co
 - DNS: Installed on `KANE-DC01`
 - Global Catalog: Enabled
 - Domain Controller type: Writable
+
+## DNS
+
+DNS was installed as part of the Active Directory Domain Services deployment.
+
+The `kane.local` DNS zone was created automatically when `KANE-DC01` was promoted to a Domain Controller.
+
+### Verified DNS Zones
+
+- `kane.local`
+- `_msdcs.kane.local`
+
+The `kane.local` zone contains Active Directory-related records including:
+
+- `_msdcs`
+- `_sites`
+- `_tcp`
+- `_udp`
+- `DomainDnsZones`
+- `ForestDnsZones`
+
+### KANE-DC01 DNS Record
+
+`KANE-DC01` has an IPv4 host record pointing to:
+
+`192.168.50.10`
+
+This DNS configuration allows Active Directory clients to locate the Domain Controller and other domain services.
