@@ -31,3 +31,14 @@ The lab uses an isolated VMware host-only network so the virtual machines can co
 - The server uses a manually configured static IPv4 address.
 - The server points to itself for DNS in preparation for the future DNS and Active Directory roles.
 - No default gateway is configured because this is an isolated host-only network.
+
+## Active Directory
+
+`KANE-DC01` has been promoted to the first Domain Controller for the Kane Corp. lab.
+
+- Domain: `kane.local`
+- NetBIOS domain name: `KANE`
+- Domain Controller: `KANE-DC01`
+- DNS: Installed on `KANE-DC01`
+- Global Catalog: Enabled
+- Domain Controller type: Writable
