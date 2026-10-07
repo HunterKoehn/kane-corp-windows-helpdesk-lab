@@ -39,8 +39,9 @@ The lab is based around a fictional company called Kane Corp.
 - [x] Windows Server installation
 - [x] KANE-DC01 setup
 - [x] Static IP configuration
-- [ ] Active Directory
-- [ ] DNS
+- [x] Active Directory
+- [x] DNS
+- [x] Active Directory organizational structure
 - [ ] Group Policy
 - [ ] Windows 11 client
 - [ ] File shares and permissions
