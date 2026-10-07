@@ -70,3 +70,31 @@ The `kane.local` zone contains Active Directory-related records including:
 `192.168.50.10`
 
 This DNS configuration allows Active Directory clients to locate the Domain Controller and other domain services.
+
+## Active Directory Organizational Structure
+
+The Active Directory environment uses Organizational Units (OUs) to organize servers, workstations, employee accounts, and security groups.
+
+### Organizational Units
+
+```text
+kane.local
+├── Groups
+├── Employee Users
+│   ├── Accounting
+│   ├── HR
+│   ├── IT
+│   ├── Sales
+│   └── Management
+├── Servers
+└── Workstations
+```
+
+The built-in Users, Computers, and Domain Controllers containers/OUs were left unchanged.
+
+Purpose
+- Servers — server computer accounts
+- Workstations — Windows workstation computer accounts
+- Employee Users — employee user accounts
+- Department OUs — organize employees by department
+- Groups — security groups used for access control and permissions
