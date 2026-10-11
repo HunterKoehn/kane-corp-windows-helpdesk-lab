@@ -113,3 +113,23 @@ Created four standard employee accounts in Active Directory and placed each acco
 The accounts were created with temporary lab passwords and configured to require a password change at the next logon.
 
 All four accounts are standard user accounts. No administrative privileges have been assigned.
+
+## Active Directory Security Groups
+
+Created five Global Security groups in the `Groups` OU to organize employee access by department.
+
+| Security Group | Members |
+|---|---|
+| `GG-Accounting` | Casey Rivera |
+| `GG-HR` | Morgan Ellis |
+| `GG-IT` | Riley Brooks |
+| `GG-Sales` | Avery Coleman |
+| `GG-Management` | No members yet |
+
+### Group Membership Verification
+
+Verified group membership through the **Member Of** tab on user accounts and the **Members** tab on security groups.
+
+Department groups will be used in later exercises to manage access to shared folders without assigning permissions to each employee individually.
+
+All department groups were created with **Global** scope and **Security** type. Department membership does not automatically grant administrative privileges.
