@@ -98,3 +98,18 @@ Purpose
 - Employee Users — employee user accounts
 - Department OUs — organize employees by department
 - Groups — security groups used for access control and permissions
+
+## Active Directory User Accounts
+
+Created four standard employee accounts in Active Directory and placed each account in its corresponding department OU.
+
+| Department | Username | OU |
+|---|---|---|
+| Accounting | `casey.rivera` | `Employee Users/Accounting` |
+| HR | `morgan.ellis` | `Employee Users/HR` |
+| IT | `riley.brooks` | `Employee Users/IT` |
+| Sales | `avery.coleman` | `Employee Users/Sales` |
+
+The accounts were created with temporary lab passwords and configured to require a password change at the next logon.
+
+All four accounts are standard user accounts. No administrative privileges have been assigned.
